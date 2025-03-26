@@ -11,32 +11,7 @@ A lightweight service that receives Prometheus remote_write metrics, transforms 
 
 ## Metric Type Mapping
 
-The service uses a hardcoded mapping of metric name patterns to desired types:
-
-| Pattern         | New Type   |
-|-----------------|------------|
-| latency         | HISTOGRAM  |
-| count           | COUNTER    |
-| memory          | GAUGE      |
-| bytes           | GAUGE      |
-| cpu             | GAUGE      |
-| requests_total  | COUNTER    |
-| errors_total    | COUNTER    |
-| duration_seconds| HISTOGRAM  |
-| response_time   | HISTOGRAM  |
-| connections     | GAUGE      |
-| temperature     | GAUGE      |
-| uptime          | COUNTER    |
-| queue_length    | GAUGE      |
-| pending_tasks   | GAUGE      |
-| resource_usage  | GAUGE      |
-| throughput      | GAUGE      |
-| operations_total| COUNTER    |
-| failures_total  | COUNTER    |
-| success_ratio   | GAUGE      |
-| processing_time | HISTOGRAM  |
-
-This mapping is defined in `internal/config/config.go` and can be modified directly in the code.
+The service uses a hardcoded mapping of metric name patterns defined in `internal/config/config.go` and can be modified directly in the code.
 
 ## Configuration
 
