@@ -1,0 +1,27 @@
+# Binaries
+metrics-transformer
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Generated protobuf files
+*.pb.go
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+bin/
+dist/
+vendor/
+
+# Go specific
+*.o
+*.a
+*.test
+*.out
+*.prof
