@@ -1,4 +1,4 @@
-# Metrics Transformer
+# Metrics Typer
 
 A lightweight service that receives Prometheus remote_write metrics, transforms them by modifying metric types based on name patterns, and forwards them to another Prometheus-compatible endpoint.
 
@@ -24,10 +24,10 @@ Configuration is provided via environment variables:
 
 ```bash
 # Run with default listen address
-DESTINATION_URL="http://prometheus:9090/api/v1/write" ./metrics-transformer
+DESTINATION_URL="http://prometheus:9090/api/v1/write" ./metrics-typer
 
 # Run with custom listen address
-LISTEN_ADDR=":9090" DESTINATION_URL="http://prometheus:9090/api/v1/write" ./metrics-transformer
+LISTEN_ADDR=":9090" DESTINATION_URL="http://prometheus:9090/api/v1/write" ./metrics-typer
 ```
 
 ## Building
@@ -37,15 +37,15 @@ LISTEN_ADDR=":9090" DESTINATION_URL="http://prometheus:9090/api/v1/write" ./metr
 protoc --go_out=. --go_opt=paths=source_relative internal/proto/remote.proto
 
 # Build binary
-go build -o metrics-transformer ./cmd/server
+go build -o metrics-typer ./cmd/server
 ```
 
 ## Docker
 
 ```bash
 # Build image
-docker build -t metrics-transformer .
+docker build -t metrics-typer .
 
 # Run container
-docker run -p 8080:8080 -v $(pwd)/config:/app/config metrics-transformer
+docker run -p 8080:8080 -v $(pwd)/config:/app/config metrics-typer
 ```

@@ -4,8 +4,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/planetscale/metrics-transformer/internal/config"
-	promproto "github.com/planetscale/metrics-transformer/internal/proto"
+	"github.com/planetscale/metrics-typer/internal/config"
+	promproto "github.com/planetscale/metrics-typer/internal/proto"
 )
 
 type Transformer struct{}

@@ -20,7 +20,7 @@ RUN protoc --go_out=. --go_opt=paths=source_relative internal/proto/remote.proto
 COPY . .
 
 # Build application
-RUN go build -o /app/metrics-transformer ./cmd/server
+RUN go build -o /app/metrics-typer ./cmd/server
 
 # Final stage
 FROM alpine:latest
@@ -28,10 +28,10 @@ FROM alpine:latest
 WORKDIR /app
 
 # Copy binary from builder stage
-COPY --from=builder /app/metrics-transformer /app/metrics-transformer
+COPY --from=builder /app/metrics-typer /app/metrics-typer
 
 # Set default environment variables
 ENV LISTEN_ADDR=":8080"
 ENV DESTINATION_URL=""
 
-CMD ["/app/metrics-transformer"]
+CMD ["/app/metrics-typer"]

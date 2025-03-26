@@ -5,15 +5,15 @@ import (
 	"os"
 	"time"
 
-	"github.com/planetscale/metrics-transformer/internal/config"
-	"github.com/planetscale/metrics-transformer/internal/server"
+	"github.com/planetscale/metrics-typer/internal/config"
+	"github.com/planetscale/metrics-typer/internal/server"
 )
 
 func main() {
 	// Configure logging with timestamps
 	log.SetFlags(log.Ldate | log.Ltime | log.Lmicroseconds | log.Lshortfile)
-	log.Println("Starting metrics-transformer...")
-	
+	log.Println("Starting metrics-typer...")
+
 	// Log all available metric type transformations
 	log.Println("Loaded metric type mappings:")
 	for pattern, newType := range config.MetricTypeMap {
@@ -32,7 +32,7 @@ func main() {
 	startTime := time.Now()
 	s := server.New(cfg)
 	log.Printf("Server initialized in %v", time.Since(startTime))
-	
+
 	if err := s.Start(); err != nil {
 		log.Fatalf("Server error: %v", err)
 		os.Exit(1)

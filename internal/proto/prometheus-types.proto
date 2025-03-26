@@ -16,7 +16,7 @@
 syntax = "proto3";
 package prometheus;
 
-option go_package = "github.com/planetscale/metrics-transformer/internal/proto";
+option go_package = "github.com/planetscale/metrics-typer/internal/proto";
 
 import "google/protobuf/descriptor.proto";
 
