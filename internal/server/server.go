@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/golang/snappy"
-	"github.com/planetscale/metrics-typer/internal/config"
-	promproto "github.com/planetscale/metrics-typer/internal/proto"
-	"github.com/planetscale/metrics-typer/internal/transformer"
+	"github.com/nickvanw/metrics-typer/internal/config"
+	promproto "github.com/nickvanw/metrics-typer/internal/proto"
+	"github.com/nickvanw/metrics-typer/internal/transformer"
 	"google.golang.org/protobuf/proto"
 )
 

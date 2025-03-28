@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/planetscale/metrics-typer/internal/config"
-	"github.com/planetscale/metrics-typer/internal/server"
+	"github.com/nickvanw/metrics-typer/internal/config"
+	"github.com/nickvanw/metrics-typer/internal/server"
 )
 
 func main() {

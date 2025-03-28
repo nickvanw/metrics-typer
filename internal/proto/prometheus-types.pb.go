@@ -828,7 +828,7 @@ const file_internal_proto_prometheus_types_proto_rawDesc = "" +
 	"\rChunkedSeries\x12/\n" +
 	"\x06labels\x18\x01 \x03(\v2\x11.prometheus.LabelB\x04\xc8\xde\x1f\x00R\x06labels\x12/\n" +
 	"\x06chunks\x18\x02 \x03(\v2\x11.prometheus.ChunkB\x04\xc8\xde\x1f\x00R\x06chunks:;\n" +
-	"\bnullable\x12\x1d.google.protobuf.FieldOptions\x18\xe9\xfb\x03 \x01(\bR\bnullableB5Z3github.com/planetscale/metrics-typer/internal/protob\x06proto3"
+	"\bnullable\x12\x1d.google.protobuf.FieldOptions\x18\xe9\xfb\x03 \x01(\bR\bnullableB5Z3github.com/nickvanw/metrics-typer/internal/protob\x06proto3"
 
 var (
 	file_internal_proto_prometheus_types_proto_rawDescOnce sync.Once

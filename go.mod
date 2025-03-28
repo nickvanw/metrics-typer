@@ -1,4 +1,4 @@
-module github.com/planetscale/metrics-typer
+module github.com/nickvanw/metrics-typer
 
 go 1.24
 

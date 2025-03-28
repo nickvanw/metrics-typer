@@ -451,7 +451,7 @@ const file_internal_proto_prometheus_remote_proto_rawDesc = "" +
 	"\x13ChunkedReadResponse\x12@\n" +
 	"\x0echunked_series\x18\x01 \x03(\v2\x19.prometheus.ChunkedSeriesR\rchunkedSeries\x12\x1f\n" +
 	"\vquery_index\x18\x02 \x01(\x03R\n" +
-	"queryIndexB5Z3github.com/planetscale/metrics-typer/internal/protob\x06proto3"
+	"queryIndexB5Z3github.com/nickvanw/metrics-typer/internal/protob\x06proto3"
 
 var (
 	file_internal_proto_prometheus_remote_proto_rawDescOnce sync.Once
