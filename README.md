@@ -33,9 +33,6 @@ LISTEN_ADDR=":9090" DESTINATION_URL="http://prometheus:9090/api/v1/write" ./metr
 ## Building
 
 ```bash
-# Generate protobuf code
-protoc --go_out=. --go_opt=paths=source_relative internal/proto/remote.proto
-
 # Build binary
 go build -o metrics-typer ./cmd/server
 ```
