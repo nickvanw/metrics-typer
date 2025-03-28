@@ -5,9 +5,6 @@ metrics-typer
 *.so
 *.dylib
 
-# Generated protobuf files
-*.pb.go
-
 # IDE files
 .idea/
 .vscode/
